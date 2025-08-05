@@ -76,7 +76,7 @@ export function MetricCards({ metrics }: MetricCardsProps) {
                       ) : (
                         <ArrowDownIcon className="h-3 w-3" />
                       )}
-                      <span>{Math.abs(metric.change)}%</span>
+                      <span>{Math.abs(metric.change || 0)}%</span>
                     </Badge>
                     <p className="text-xs text-muted-foreground">
                       from last month
