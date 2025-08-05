@@ -138,12 +138,11 @@ export const mockBarChartData: ChartDataPoint[] = [
 ];
 
 export const mockPieChartData: ChartDataPoint[] = [
-  { name: 'Organic Search', value: 4200 },
-  { name: 'Paid Search', value: 3800 },
-  { name: 'Social Media', value: 2400 },
-  { name: 'Email', value: 1800 },
-  { name: 'Direct', value: 3200 },
-  { name: 'Referral', value: 1600 }
+  { name: '18-24', value: 3000 },
+  { name: '25-34', value: 4500 },
+  { name: '35-44', value: 3500 },
+  { name: '45-54', value: 2000 },
+  { name: '55+', value: 1000 }
 ];
 
 export const mockTableData: TableRow[] = [
@@ -152,10 +151,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Summer Sale 2024',
     platform: 'Google Ads',
     impressions: 125000,
-    clicks: 3750,
+    clicks: 7787,
     conversions: 187,
     revenue: 14960,
-    ctr: 3.0,
     cpc: 3.99,
     status: 'active'
   },
@@ -164,10 +162,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Brand Awareness Q4',
     platform: 'Facebook',
     impressions: 98000,
-    clicks: 2940,
+    clicks: 5412,
     conversions: 147,
     revenue: 11760,
-    ctr: 3.0,
     cpc: 2.85,
     status: 'active'
   },
@@ -176,10 +173,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Holiday Collection',
     platform: 'Instagram',
     impressions: 87500,
-    clicks: 2625,
+    clicks: 1454,
     conversions: 131,
     revenue: 10480,
-    ctr: 3.0,
     cpc: 3.20,
     status: 'paused'
   },
@@ -188,10 +184,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'New Product Launch',
     platform: 'LinkedIn',
     impressions: 45000,
-    clicks: 1350,
+    clicks: 2636,
     conversions: 68,
     revenue: 5440,
-    ctr: 3.0,
     cpc: 4.75,
     status: 'active'
   },
@@ -200,10 +195,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Retargeting Campaign',
     platform: 'Google Ads',
     impressions: 67000,
-    clicks: 2010,
+    clicks: 1544,
     conversions: 101,
     revenue: 8080,
-    ctr: 3.0,
     cpc: 2.55,
     status: 'completed'
   },
@@ -212,10 +206,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Video Marketing Push',
     platform: 'YouTube',
     impressions: 156000,
-    clicks: 4680,
+    clicks: 6687,
     conversions: 234,
     revenue: 18720,
-    ctr: 3.0,
     cpc: 2.99,
     status: 'active'
   },
@@ -224,10 +217,9 @@ export const mockTableData: TableRow[] = [
     campaign: 'Local Business Ads',
     platform: 'Facebook',
     impressions: 34000,
-    clicks: 1020,
+    clicks: 8586,
     conversions: 51,
     revenue: 4080,
-    ctr: 3.0,
     cpc: 3.45,
     status: 'active'
   },
@@ -236,14 +228,17 @@ export const mockTableData: TableRow[] = [
     campaign: 'Email Newsletter Promo',
     platform: 'Email',
     impressions: 25000,
-    clicks: 750,
+    clicks: 3236,
     conversions: 38,
     revenue: 3040,
-    ctr: 3.0,
     cpc: 1.20,
     status: 'completed'
   }
-];
+].map(row => ({
+  ...row,
+  ctr: (row.clicks / row.impressions) * 100,
+  status: row.status as TableRow['status'] // Explicitly cast status to the defined literal types
+}));
 
 // Generate more realistic time-series data for real-time updates
 export const generateRealtimeData = (): ChartDataPoint[] => {

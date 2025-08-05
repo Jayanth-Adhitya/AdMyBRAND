@@ -107,9 +107,9 @@ export function AnalyticsCharts({ lineData, barData, pieData }: AnalyticsChartsP
       >
         <Card className="h-[400px]">
           <CardHeader>
-            <CardTitle>Traffic Sources</CardTitle>
+            <CardTitle>Demographics</CardTitle>
             <CardDescription>
-              Distribution of traffic by source
+              Distribution of users by age group
             </CardDescription>
           </CardHeader>
           <CardContent className="h-[300px]">
