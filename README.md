@@ -40,8 +40,8 @@ A stunning, modern analytics dashboard built for digital marketing agencies. Fea
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd analytics-dashboard
+   git clone https://github.com/Jayanth-Adhitya/AdMyBRAND.git
+   cd AdMyBRAND
    ```
 
 2. **Install dependencies**
