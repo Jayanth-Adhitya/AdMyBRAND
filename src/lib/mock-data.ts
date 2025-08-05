@@ -24,6 +24,7 @@ export interface TableRow {
   clicks: number;
   conversions: number;
   revenue: number;
+  ctr: number;
   cpc: number;
   status: 'active' | 'paused' | 'completed';
 }
@@ -154,6 +155,7 @@ export const mockTableData: TableRow[] = [
     clicks: 3750,
     conversions: 187,
     revenue: 14960,
+    ctr: 3.0,
     cpc: 3.99,
     status: 'active'
   },
@@ -165,6 +167,7 @@ export const mockTableData: TableRow[] = [
     clicks: 2940,
     conversions: 147,
     revenue: 11760,
+    ctr: 3.0,
     cpc: 2.85,
     status: 'active'
   },
@@ -176,6 +179,7 @@ export const mockTableData: TableRow[] = [
     clicks: 2625,
     conversions: 131,
     revenue: 10480,
+    ctr: 3.0,
     cpc: 3.20,
     status: 'paused'
   },
@@ -187,6 +191,7 @@ export const mockTableData: TableRow[] = [
     clicks: 1350,
     conversions: 68,
     revenue: 5440,
+    ctr: 3.0,
     cpc: 4.75,
     status: 'active'
   },
@@ -198,6 +203,7 @@ export const mockTableData: TableRow[] = [
     clicks: 2010,
     conversions: 101,
     revenue: 8080,
+    ctr: 3.0,
     cpc: 2.55,
     status: 'completed'
   },
@@ -209,6 +215,7 @@ export const mockTableData: TableRow[] = [
     clicks: 4680,
     conversions: 234,
     revenue: 18720,
+    ctr: 3.0,
     cpc: 2.99,
     status: 'active'
   },
@@ -220,6 +227,7 @@ export const mockTableData: TableRow[] = [
     clicks: 1020,
     conversions: 51,
     revenue: 4080,
+    ctr: 3.0,
     cpc: 3.45,
     status: 'active'
   },
@@ -231,6 +239,7 @@ export const mockTableData: TableRow[] = [
     clicks: 750,
     conversions: 38,
     revenue: 3040,
+    ctr: 3.0,
     cpc: 1.20,
     status: 'completed'
   }
