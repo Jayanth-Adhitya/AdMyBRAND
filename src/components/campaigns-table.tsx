@@ -46,7 +46,7 @@ export function CampaignsTable({ data }: CampaignsTableProps) {
   const [itemsPerPage] = useState(5)
 
   const filteredAndSortedData = useMemo(() => {
-    let filtered = data.filter(row => {
+    const filtered = data.filter(row => {
       const matchesSearch = 
         row.campaign.toLowerCase().includes(searchTerm.toLowerCase()) ||
         row.platform.toLowerCase().includes(searchTerm.toLowerCase())
