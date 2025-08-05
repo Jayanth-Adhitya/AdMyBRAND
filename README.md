@@ -2,7 +2,7 @@
 
 A stunning, modern analytics dashboard built for digital marketing agencies. Features real-time data visualization, responsive design, and smooth animations.
 
-![Dashboard Preview](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop)
+![Dashboard Preview](<img width="1919" height="932" alt="Image" src="https://github.com/user-attachments/assets/7ce06603-341d-4b40-82f8-05f9942d95b0" />)
 
 ## ✨ Features
 
@@ -191,20 +191,6 @@ The dashboard is fully responsive with breakpoints:
 - **Font Loading**: Optimized web font loading
 - **Bundle Analysis**: Lightweight dependencies
 
-### Lighthouse Scores
-- **Performance**: 95+
-- **Accessibility**: 100
-- **Best Practices**: 100
-- **SEO**: 100
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -220,4 +206,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Built with ❤️ for digital marketing agencies
+Built with ❤️ for AdMyBRAND
