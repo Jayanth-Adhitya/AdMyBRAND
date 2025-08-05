@@ -227,45 +227,39 @@ export function CampaignsTable({ data }: CampaignsTableProps) {
                       <SortIcon column="revenue" />
                     </div>
                   </TableHead>
-                  <TableHead 
-                    className="text-right cursor-pointer hover:bg-muted/50 transition-colors"
-                    onClick={() => handleSort('ctr')}
-                  >
-                    <div className="flex items-center justify-end space-x-1">
-                      <span>CTR</span>
-                      <SortIcon column="ctr" />
-                    </div>
-                  </TableHead>
                   <TableHead>Status</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {paginatedData.map((row, index) => (
-                  <motion.tr
-                    key={row.id}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="hover:bg-muted/50 transition-colors"
-                  >
-                    <TableCell className="font-medium max-w-[200px] truncate">
-                      {row.campaign}
-                    </TableCell>
-                    <TableCell>{row.platform}</TableCell>
-                    <TableCell className="text-right">{formatNumber(row.impressions)}</TableCell>
-                    <TableCell className="text-right">{formatNumber(row.clicks)}</TableCell>
-                    <TableCell className="text-right">{formatNumber(row.conversions)}</TableCell>
-                    <TableCell className="text-right font-medium">
-                      {formatCurrency(row.revenue)}
-                    </TableCell>
-                    <TableCell className="text-right">{row.ctr.toFixed(1)}%</TableCell>
-                    <TableCell>
-                      <Badge variant={getStatusColor(row.status)}>
-                        {row.status}
-                      </Badge>
-                    </TableCell>
-                  </motion.tr>
-                ))}
+                {paginatedData.map((row, index) => {
+                  const ctr = row.impressions > 0 ? (row.clicks / row.impressions) * 100 : 0;
+                  return (
+                    <motion.tr
+                      key={row.id}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      className="hover:bg-muted/50 transition-colors"
+                    >
+                      <TableCell className="font-medium max-w-[200px] truncate">
+                        {row.campaign}
+                      </TableCell>
+                      <TableCell>{row.platform}</TableCell>
+                      <TableCell className="text-right">{formatNumber(row.impressions)}</TableCell>
+                      <TableCell className="text-right">{formatNumber(row.clicks)}</TableCell>
+                      <TableCell className="text-right">{formatNumber(row.conversions)}</TableCell>
+                      <TableCell className="text-right font-medium">
+                        {formatCurrency(row.revenue)}
+                      </TableCell>
+                      <TableCell className="text-right">{ctr.toFixed(1)}%</TableCell>
+                      <TableCell>
+                        <Badge variant={getStatusColor(row.status)}>
+                          {row.status}
+                        </Badge>
+                      </TableCell>
+                    </motion.tr>
+                  )
+                })}
               </TableBody>
             </Table>
           </div>
