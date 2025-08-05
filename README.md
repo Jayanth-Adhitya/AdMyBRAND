@@ -2,7 +2,10 @@
 
 A stunning, modern analytics dashboard built for digital marketing agencies. Features real-time data visualization, responsive design, and smooth animations.
 
-![Dashboard Preview](<img width="1919" height="932" alt="Image" src="https://github.com/user-attachments/assets/7ce06603-341d-4b40-82f8-05f9942d95b0" />)
+## 📸 Dashboard Preview
+
+
+<img width="1919" height="932" alt="Image" src="https://github.com/user-attachments/assets/7ce06603-341d-4b40-82f8-05f9942d95b0" />
 
 ## ✨ Features
 
