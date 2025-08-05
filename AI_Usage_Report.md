@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This report details the application of artificial intelligence (AI) tools in the development of a recent software project. The primary AI systems utilized were **v0 by Vercel** for user interface (UI) component generation, **GitHub Copilot** for general-purpose code generation and completion, and **CodiumAI** (referred to as 'cline' in the user's query) for code analysis and testing. In addition, several Large Language Models (LLMs), including **Gemini 2.5 Pro**, **Claude 4 Sonnet**, and **DeepSeek**, were employed for various coding, reasoning, and planning tasks. The integration of these tools led to significant gains in development speed and efficiency, particularly in the creation of boilerplate code and UI elements, while also contributing to improved code quality and documentation.
+This report details the application of artificial intelligence (AI) tools in the development of a recent software project. The primary AI systems utilized were **v0 by Vercel** for user interface (UI) component generation, **GitHub Copilot** for general-purpose code generation and completion, and **Cline** for code analysis and testing. In addition, several Large Language Models (LLMs), including **Gemini 2.5 Pro**, **Claude 4 Sonnet**, and **DeepSeek**, were employed for various coding, reasoning, and planning tasks. The integration of these tools led to significant gains in development speed and efficiency, particularly in the creation of boilerplate code and UI elements, while also contributing to improved code quality and documentation.
 
 ---
 
@@ -28,11 +28,11 @@ This report details the application of artificial intelligence (AI) tools in the
     * **Increased Productivity:** The real-time suggestions reduced the need to manually type out code, leading to a noticeable increase in coding speed.
     * **Reduced Cognitive Load:** By handling predictable or repetitive code, Copilot allowed developers to maintain their focus on higher-level problem-solving and architectural decisions.
 
-### 1.3. CodiumAI (Code Integrity and Testing)
+### 1.3. Cline (Code Integrity and Testing)
 
-* **Purpose:** CodiumAI is an AI-powered tool focused on code integrity. Its main function is to analyze existing code and automatically generate a comprehensive suite of unit tests, documentation (docstrings), and identify potential bugs.
+* **Purpose:** Cline is an AI-powered tool focused on code integrity. Its main function is to analyze existing code and automatically generate a comprehensive suite of unit tests, documentation (docstrings), and identify potential bugs.
 * **Application in Project:** This tool was utilized after core functionality was implemented. It was used to:
-    * **Generate Unit Tests:** CodiumAI analyzed functions and methods to create test cases that cover various scenarios, including "happy paths" and edge cases.
+    * **Generate Unit Tests:** Cline analyzed functions and methods to create test cases that cover various scenarios, including "happy paths" and edge cases.
     * **Analyze and Improve Code:** The tool provided suggestions for refactoring or optimizing code, helping to improve performance and readability.
     * **Automate Documentation:** It was used to generate docstrings, ensuring that key functions and classes were well-documented.
 * **Impact:**
