@@ -116,7 +116,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground; /* Keep text transition, but background is handled by html */
   }
 }
 
@@ -196,6 +196,7 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  @apply transition-colors duration-500; /* Apply transition to html for background */
 }
 
 /* Custom scrollbar for webkit browsers */
